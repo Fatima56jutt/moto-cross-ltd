@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Caption App</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>YouTube Video with Custom Captions</h2>
+        <input type="text" id="youtubeUrl" placeholder="Paste the YouTube link here.">
+        <button onclick="prepareVideo()">Load Video</button>
+
+        <div id="videoContainer" style="margin-top:20px;"></div>
+
+        <hr>
+        <h3>Add the caption</h3>
+        <input type="text" id="captionText" placeholder="Wow, what a shot!">
+        <input type="number" id="captionTime" placeholder="Seconds (like 15)">
+        <button onclick="addCaption()">Add the caption</button>
+
+        <div id="captionDisplay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
